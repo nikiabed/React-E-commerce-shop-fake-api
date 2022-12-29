@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Vazir;
+  src: url("../src/fonts/Vazir-Regular.eot");
+  src: url("../src/fonts/Vazir-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../src/fonts/Vazir-Regular.woff2") format("woff2"),
+    url("../src/fonts/Vazir-Regular.woff") format("woff"),
+    url("../src/fonts/Vazir-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("../src/fonts/Vazir-Bold.eot");
+  src: url("../src/fonts/Vazir-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../src/fonts/Vazir-Bold.woff2") format("woff2"),
+    url("../src/fonts/Vazir-Bold.woff") format("woff"),
+    url("../src/fonts/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("../src/fonts/Vazir-Black.eot");
+  src: url("../src/fonts/Vazir-Black.eot?#iefix") format("embedded-opentype"),
+    url("../src/fonts/Vazir-Black.woff2") format("woff2"),
+    url("../src/fonts/Vazir-Black.woff") format("woff"),
+    url("../src/fonts/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("../src/fonts/Vazir-Medium.eot");
+  src: url("../src/fonts/Vazir-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../src/fonts/Vazir-Medium.woff2") format("woff2"),
+    url("../src/fonts/Vazir-Medium.woff") format("woff"),
+    url("../src/fonts/Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("../src/fonts/Vazir-Light.eot");
+  src: url("../src/fonts/Vazir-Light.eot?#iefix") format("embedded-opentype"),
+    url("../src/fonts/Vazir-Light.woff2") format("woff2"),
+    url("../src/fonts/Vazir-Light.woff") format("woff"),
+    url("../src/fonts/Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("../src/fonts/Vazir-Thin.eot");
+  src: url("../src/fonts/Vazir-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../src/fonts/Vazir-Thin.woff2") format("woff2"),
+    url("../src/fonts/Vazir-Thin.woff") format("woff"),
+    url("../src/fonts/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: VazirNum;
+  src: url("../src/fonts/Vazir-Variable.eot");
+  src: url("../src/fonts/Vazir-Variable.eot?#iefix") format("embedded-opentype"),
+    url("../src/fonts/Vazir-Variable.woff2") format("woff2"),
+    url("../src/fonts/Vazir-Variable.woff") format("woff"),
+    url("../src/fonts/Vazir-Variable.ttf") format("truetype");
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: Badr;
+  src: url("../src/fonts/BBadr.eot");
+  src: url("../src/fonts/BBadr.eot?#iefix") format("embedded-opentype"),
+    url("../src/fonts/BBadr.woff") format("woff"),
+    url("../src/fonts/BBadr.ttf") format("truetype");
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: Yekan;
+  src: url("../src/fonts/BYekan.eot");
+  src: url("../src/fonts/BYekan.eot?#iefix") format("embedded-opentype"),
+    url("../src/fonts/BYekan.woff") format("woff"),
+    url("../src/fonts/BBadr.ttf") format("truetype");
+  font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
+.blaze-pagination {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.blaze-pagination button {
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background: #f2f2f2;
+  cursor: pointer;
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blaze-pagination button.active {
+    width: 15px;
+    height: 7px;
+    border-radius: 6rem;
+    background: white;
+    transform: scale(1.5);
+}
+
+.hide {
+    display: none;
+}
+
+.b:hover + .hide {
+    display: inline-block;
 }
